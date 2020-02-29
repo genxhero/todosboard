@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  padding: 0.5rem;
+  margin: 25px;
+}
+
+.column-topper {
+  color: white;
+}
+
+.purple {
+  background: #8e6e95;
+}
+
+.teal {
+  background: #39a59c;
+}
+
+.orange {
+  background: #e8741e;
+}
+
+.blue {
+  background: #344759;
+}
