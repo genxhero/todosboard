@@ -1,6 +1,13 @@
 import React, {useState}from "react";
 import Column from "./Column";
 
+const INITIAL_CARDS = {
+    0: ["aaa", "bbb"], 
+    1: ["ccc", "ddd"], 
+    2: ["eee", "fff"], 
+    3: ["ggg", "hhh"]
+}
+
 const TodosBoard = props => {
     const moveCardLeft = e => {
 
@@ -10,7 +17,7 @@ const TodosBoard = props => {
 
     };
 
-    const [cards, shiftCards] = useState({0: ["aaa", "bbb"], 1: ["ccc", "ddd"], 2: [ "eee", "fff"], 3: ["ggg", "hhh"]})
+    const [cards, shiftCards] = useState(INITIAL_CARDS)
 
     return (
         <div className="board">
