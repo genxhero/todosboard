@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./App.css";
 import TodosBoard from "./TodosBoard";
 
 const App = props => {
