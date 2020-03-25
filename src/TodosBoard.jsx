@@ -10,12 +10,13 @@ const INITIAL_CARDS = {
 
 const TodosBoard = props => {
     const moveCardLeft = e => {
-        let to = e.target.getAttribute("name");
+        let to = parseInt(e.target.getAttribute("name"));
 
     };
 
     const moveCardRight = e => {
-        let to = e.target.getAttribute("name");
+        let to = parseInt(e.target.getAttribute("name"));
+        
     };
 
     const [cards, shiftCards] = useState(INITIAL_CARDS)
