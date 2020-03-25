@@ -2,22 +2,8 @@ import Card from './Card'
 import React from 'react';
 
 const Column = props => {
-    const { cards, columnId, employeeName, color, moveCardLeft, moveCardRight } = props;
+    const { cards, columnId, employeeName, color, moveCardLeft, moveCardRight, newCard} = props;
     
-
-    const newCard = () => {
-        const newTask = window.prompt("Please Describe New Task");
-        // addCard([
-        //     ...cards,
-        //     <Card
-        //         task={newTask}
-        //         columnId={columnId}
-        //         moveCardLeft={moveCardLeft}
-        //         moveCardRight={moveCardRight}
-        //     />
-        // ]);
-    };
-
     return (
         <div className="column">
             <div className={`column-topper ${color}`}>
@@ -35,7 +21,7 @@ const Column = props => {
                     );
                 }
             })}
-            <div onClick={newCard}>Click to Add New Card</div>
+            <div onClick={newCard} name={columnId}>Click to Add New Card</div>
         </div>
     );
 };
