@@ -1,31 +1,21 @@
+import Card from './Card'
+import React from 'react';
+
 const Column = props => {
-    const { columnId, employeeName, color, moveCardLeft, moveCardRight } = props;
-    const [cards, addCard] = useState([
-        <Card
-            task="abb"
-            columnId={columnId}
-            moveCardLeft={moveCardLeft}
-            moveCardRight={moveCardRight}
-        />,
-        <Card
-            task="bba"
-            columnId={columnId}
-            moveCardLeft={moveCardLeft}
-            moveCardRight={moveCardRight}
-        />
-    ]);
+    const { cards, columnId, employeeName, color, moveCardLeft, moveCardRight } = props;
+    
 
     const newCard = () => {
         const newTask = window.prompt("Please Describe New Task");
-        addCard([
-            ...cards,
-            <Card
-                task={newTask}
-                columnId={columnId}
-                moveCardLeft={moveCardLeft}
-                moveCardRight={moveCardRight}
-            />
-        ]);
+        // addCard([
+        //     ...cards,
+        //     <Card
+        //         task={newTask}
+        //         columnId={columnId}
+        //         moveCardLeft={moveCardLeft}
+        //         moveCardRight={moveCardRight}
+        //     />
+        // ]);
     };
 
     return (
@@ -35,7 +25,14 @@ const Column = props => {
             </div>
             {cards.map(card => {
                 {
-                    return card;
+                    return (
+                      <Card
+                        task={card}
+                        columnId={columnId}
+                        moveCardLeft={moveCardLeft}
+                        moveCardRight={moveCardRight}
+                      />
+                    );
                 }
             })}
             <div onClick={newCard}>Click to Add New Card</div>
