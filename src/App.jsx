@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import TodosBoard from "./TodosBoard";
 
-export default function App() {
+const App = props => {
     return (
         <div className="App">
             <h1>Wat?</h1>
@@ -10,3 +10,6 @@ export default function App() {
         </div>
     );
 }
+
+
+export default App;
