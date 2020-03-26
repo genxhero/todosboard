@@ -13,6 +13,7 @@ const Column = props => {
                 {
                     return (
                       <Card
+                        key={card}
                         task={card}
                         columnId={columnId}
                         moveCardLeft={moveCardLeft}
