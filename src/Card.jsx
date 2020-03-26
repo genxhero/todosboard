@@ -6,6 +6,7 @@ const Card = props => {
       <div className="card">
         <div
           id="left-shift-arrow"
+          className="card-shift-arrow"
           name={columnId}
           value={task}
           onClick={moveCardLeft}
@@ -17,6 +18,7 @@ const Card = props => {
 
         <div
           id="right-shift-arrow"
+          className="card-shift-arrow"
           name={columnId}
           value={task}
           onClick={moveCardRight}
