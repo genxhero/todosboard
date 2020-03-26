@@ -11,13 +11,29 @@ const INITIAL_CARDS = {
 const TodosBoard = props => {
 
     const moveCardLeft = e => {
-        let to = parseInt(e.currentTarget.getAttribute("name"));
-        debugger;
+        let from = parseInt(e.currentTarget.getAttribute("name"));
+        let to = from - 1;
+        const newCards = Object.assign({}, cards);
+        const task = e.currentTarget.getAttribute("value");
+        newCards[to].push(task);
+        // debugger;
+        newCards[from].splice(newCards[from].indexOf(task), 1)
+        console.log("New Cards To", newCards[to])
+        console.log("New Cards From", newCards[from])
+        changeCards(newCards);
     };
 
     const moveCardRight = e => {
-        let to = parseInt(e.currentTarget.getAttribute("name"));
-        debugger;
+        let from = parseInt(e.currentTarget.getAttribute("name"));
+        let to = from + 1
+        const newCards = Object.assign({}, cards);
+        const task = e.currentTarget.getAttribute("value");
+        newCards[to].push(task);
+        // debugger
+        newCards[from].splice(newCards[from].indexOf(task), 1);
+          console.log("New Cards To", newCards[to]);
+          console.log("New Cards From", newCards[from]);
+        changeCards(newCards);
     };
 
         const newCard = (e) => {
