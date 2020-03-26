@@ -6,12 +6,12 @@ const Card = props => {
       <div className="card">
         <div
           id="left-shift-arrow"
-          className="card-shift-arrow"
+          
           name={columnId}
           value={task}
           onClick={moveCardLeft}
         >
-          {columnId > 0 && <span> {"<"}</span>}
+          {columnId > 0 && <span > {"<"}</span>}
         </div>
 
         {task}
