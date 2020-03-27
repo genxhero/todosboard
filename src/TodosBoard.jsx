@@ -37,6 +37,11 @@ const TodosBoard = props => {
         changeCards(newCards);
     };
 
+        /**
+     * Moves a card to the column on its right.
+     * 
+     * @param {*} e 
+     */
     const moveCardRight = e => {
         let from = parseInt(e.currentTarget.getAttribute("name"));
         let to = from + 1
