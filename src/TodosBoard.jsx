@@ -54,6 +54,11 @@ const TodosBoard = props => {
         changeCards(newCards);
     };
 
+    /**
+     * Creates a new card by adding a new task to the corresponding column.
+     * 
+     * @param {*} e 
+     */
         const newCard = (e) => {
           const newTask = window.prompt("Please Describe New Task");
           const columnId = e.currentTarget.getAttribute("name");
