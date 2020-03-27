@@ -26,7 +26,6 @@ const TodosBoard = props => {
         const newCards = Object.assign({}, cards);
         const task = e.currentTarget.getAttribute("value");
         newCards[to].push(task);
-        // debugger;
         newCards[from].splice(newCards[from].indexOf(task), 1)
         console.log("New Cards To", newCards[to])
         console.log("New Cards From", newCards[from])
@@ -39,7 +38,6 @@ const TodosBoard = props => {
         const newCards = Object.assign({}, cards);
         const task = e.currentTarget.getAttribute("value");
         newCards[to].push(task);
-        // debugger
         newCards[from].splice(newCards[from].indexOf(task), 1);
           console.log("New Cards To", newCards[to]);
           console.log("New Cards From", newCards[from]);
