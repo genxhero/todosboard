@@ -1,6 +1,12 @@
 import Card from './Card'
 import React from 'react';
 
+/**
+ * A column can hold many cards containing various todo tasks.
+ * 
+ * @param {*} props 
+ */
+
 const Column = props => {
     const { cards, columnId, employeeName, color, moveCardLeft, moveCardRight, newCard} = props;
     
