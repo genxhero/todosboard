@@ -20,6 +20,11 @@ const INITIAL_CARDS = {
 
 const TodosBoard = props => {
 
+    /**
+     * Moves a card to the column on its left.
+     * 
+     * @param {*} e 
+     */
     const moveCardLeft = e => {
         let from = parseInt(e.currentTarget.getAttribute("name"));
         let to = from - 1;
