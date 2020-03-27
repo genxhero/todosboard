@@ -1,5 +1,12 @@
 import React from "react";
 
+/**
+ * 
+ * This component's job is to display a task to be done sooner than later.
+ * 
+ * @param {*} props 
+ */
+
 const Card = props => {
     const { task, columnId, moveCardLeft, moveCardRight } = props;
     return (
