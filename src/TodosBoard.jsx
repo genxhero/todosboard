@@ -8,6 +8,16 @@ const INITIAL_CARDS = {
     3: ["ggg", "hhh"]
 }
 
+/**
+ * 
+ * This is the TodosBoard which displays a task list on cards in four columns.
+ * TODO: Make this more dynamic by passing a users const as a prop that will have a name and a color.
+ * user = {name: String, color: String}
+ * It's an array of objects.
+ * 
+ * @param {*} props 
+ */
+
 const TodosBoard = props => {
 
     const moveCardLeft = e => {
