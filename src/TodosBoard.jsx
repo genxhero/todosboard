@@ -68,7 +68,10 @@ const TodosBoard = props => {
         };
 
     const [cards, changeCards] = useState(INITIAL_CARDS)
-
+/**
+ * Use users.map() to create columns.
+ * Initial cards will have to go 
+ */
     return (
       <div className="board">
         <Column
